@@ -7,7 +7,7 @@ namespace Core.Utilities.Security.Hashing
     // bu bizim için araç, çıplak kalabilir bu class
    public class HashingHelper
     {
-        public static void CretePasswordHash
+        public static void CreatePasswordHash
             (string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512())
